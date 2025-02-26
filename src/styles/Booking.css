@@ -1,0 +1,45 @@
+.booking {
+  background-color: #d51313;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6.5px 60px;
+}
+
+.booking-container {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.booking-text {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  flex: 0.5;
+}
+
+.icon {
+  font-size: 10px;
+  color: white;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.booking-text .arrow {
+  font-size: 13px;
+}
