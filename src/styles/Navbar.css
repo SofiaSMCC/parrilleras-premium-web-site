@@ -24,7 +24,8 @@
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-.navbar-menu li a:hover {
+.navbar-menu li a:hover,
+.navbar-menu li a.active {
   color: white;
   text-decoration: underline;
 }

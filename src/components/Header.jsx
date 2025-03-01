@@ -1,11 +1,11 @@
 import Navbar from "./NavBar";
 import Reserva from "./Booking";
 
-function Header() {
+function Header({ currentPage, setCurrentPage }) {
   return (
     <header>
       <Reserva />
-      <Navbar />
+      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </header>
   );
 }

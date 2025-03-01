@@ -4,7 +4,7 @@ import searchIcon from "../assets/icons/search.png";
 import userIcon from "../assets/icons/user.png";
 import storeIcon from "../assets/icons/store.png";
 
-function Navbar() {
+function Navbar({ currentPage, setCurrentPage }) {
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -12,23 +12,58 @@ function Navbar() {
 
         <ul className="navbar-menu">
           <li>
-            {" "}
-            <a href="#">Inicio</a>
+            <a
+              href="#"
+              className={currentPage === "home" ? "active" : ""}
+              onClick={() => setCurrentPage("home")}
+            >
+              Inicio
+            </a>
           </li>
           <li>
-            <a href="#">Nosotros</a>
+            <a
+              href="#"
+              className={currentPage === "aboutUs" ? "active" : ""}
+              onClick={() => setCurrentPage("aboutUs")}
+            >
+              Nosotros
+            </a>
           </li>
           <li>
-            <a href="#">Servicios</a>
+            <a
+              href="#"
+              className={currentPage === "services" ? "active" : ""}
+              onClick={() => setCurrentPage("services")}
+            >
+              Servicios
+            </a>
           </li>
           <li>
-            <a href="#">Tienda</a>
+            <a
+              href="#"
+              className={currentPage === "store" ? "active" : ""}
+              onClick={() => setCurrentPage("store")}
+            >
+              Tienda
+            </a>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a
+              href="#"
+              className={currentPage === "contact" ? "active" : ""}
+              onClick={() => setCurrentPage("contact")}
+            >
+              Contacto
+            </a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a
+              href="#"
+              className={currentPage === "blog" ? "active" : ""}
+              onClick={() => setCurrentPage("blog")}
+            >
+              Blog
+            </a>
           </li>
         </ul>
 
