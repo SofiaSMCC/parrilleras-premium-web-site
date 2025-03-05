@@ -1,14 +1,7 @@
 .home {
   text-align: center;
-  padding: 50px 20px;
-}
-
-.home h1 {
-  font-size: 2.5rem;
-  color: #d51313;
-}
-
-.home p {
-  font-size: 1.2rem;
-  color: #333;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }

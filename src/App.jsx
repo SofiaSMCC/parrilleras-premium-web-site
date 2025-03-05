@@ -1,11 +1,11 @@
 import "./App.css";
 import Header from "./components/Header";
-import Home from "./components/Home";
-import AboutUs from "./components/AboutUs";
-import Services from "./components/Services";
-import Store from "./components/Store";
-import Contact from "./components/Contact";
-import Blog from "./components/Blog";
+import Home from "./components/home/Home";
+import AboutUs from "./components/aboutUs/AboutUs";
+import Services from "./components/services/Services";
+import Store from "./components/store/Store";
+import Contact from "./components/contact/Contact";
+import Blog from "./components/blog/Blog";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
